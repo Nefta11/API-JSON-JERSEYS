@@ -7,7 +7,7 @@ const router = Router();
 router.get('/', getAll);
 router.get('/:code', getOne);
 router.post('/', insertClothe);
-router.post('/:code', updateClothe);
+router.put('/:code', updateClothe);
 router.get('/De/:code', deleteClothe);
 
 export default router;
