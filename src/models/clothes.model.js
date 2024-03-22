@@ -1,5 +1,6 @@
 import { Schema, model } from "mongoose";
 
+
 const clothesSchema = new Schema({
     urlImg: String ,
     code: {
