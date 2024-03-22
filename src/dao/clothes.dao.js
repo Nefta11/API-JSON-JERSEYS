@@ -18,12 +18,13 @@ ClotheDAO.insertClothe = async (clothe) => {
 }
 
 ClotheDAO.updateClothe = async (cd, clothe) => {
-    const clotheUpdated = await Clothe.findOneAndUpdate({ code: cd  }, clothe);
+    const clotheUpdated = await Clothe.findOneAndUpdate({ code: cd  }, clothe, { new: true });
     if (clotheUpdated != null)
         return true;
     else
         return false;
 }
+
 
 ClotheDAO.deleteClothe = async (cd) => {
     const clotheDeleted = await Clothe.findOneAndDelete({ code: cd  });
