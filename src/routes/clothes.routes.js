@@ -8,6 +8,6 @@ router.get('/', getAll);
 router.get('/:code', getOne);
 router.post('/', insertClothe);
 router.put('/:code', updateClothe);
-router.get('/De/:code', deleteClothe);
+router.delete('/De/:code', deleteClothe);
 
 export default router;
